@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_splash"
+    tools:context=".screens.fragments.SplashScreenFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewEarth"
+            android:layout_width="78dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="368dp"
+            android:src="@drawable/logo_earth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewGiaPayLogo"
+            android:layout_width="126dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="379dp"
+            android:src="@drawable/giapay_logo_one"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLayerOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="#C3FFFFFF"
+            android:backgroundTint="#DFFFFFFF"
+            android:src="@drawable/layer_one_splash"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLayerTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/layer_two_splash"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewLayerOne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLayerThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/layer_three_splash"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLayerFour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/layer_four_splash"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewGiaPayLogoTwo"
+            android:layout_width="126dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="157dp"
+            android:src="@drawable/giapay_logo_two"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGiaPayLogo" />
+
+        <ImageView
+            android:id="@+id/imageViewGiaPayLogoGroup"
+            android:layout_width="134dp"
+            android:layout_height="167dp"
+            android:layout_marginStart="153dp"
+            android:src="@drawable/giapay_logo_group"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGiaPayLogoTwo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
